@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		4CF2F4AA285A4B5D001C102F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2F4A9285A4B5D001C102F /* AppDelegate.swift */; };
 		4CF2F4AC285A4B5D001C102F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2F4AB285A4B5D001C102F /* SceneDelegate.swift */; };
-		4CF2F4AE285A4B5D001C102F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2F4AD285A4B5D001C102F /* ViewController.swift */; };
 		4CF2F4B1285A4B5D001C102F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF2F4AF285A4B5D001C102F /* Main.storyboard */; };
 		4CF2F4B3285A4B60001C102F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF2F4B2285A4B60001C102F /* Assets.xcassets */; };
 		4CF2F4B6285A4B60001C102F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF2F4B4285A4B60001C102F /* LaunchScreen.storyboard */; };
+		4CF2F4C0285B97FE001C102F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2F4BF285B97FE001C102F /* ViewController.swift */; };
+		4CF2F4C5285B9945001C102F /* MainRaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2F4C4285B9945001C102F /* MainRaceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4CF2F4A6285A4B5D001C102F /* SwiftRace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF2F4A9285A4B5D001C102F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CF2F4AB285A4B5D001C102F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4CF2F4AD285A4B5D001C102F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4CF2F4B0285A4B5D001C102F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CF2F4B2285A4B60001C102F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CF2F4B5285A4B60001C102F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CF2F4B7285A4B60001C102F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CF2F4BF285B97FE001C102F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4CF2F4C4285B9945001C102F /* MainRaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRaceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				4CF2F4A9285A4B5D001C102F /* AppDelegate.swift */,
 				4CF2F4AB285A4B5D001C102F /* SceneDelegate.swift */,
-				4CF2F4AD285A4B5D001C102F /* ViewController.swift */,
+				4CF2F4BF285B97FE001C102F /* ViewController.swift */,
+				4CF2F4C4285B9945001C102F /* MainRaceViewController.swift */,
 				4CF2F4AF285A4B5D001C102F /* Main.storyboard */,
 				4CF2F4B2285A4B60001C102F /* Assets.xcassets */,
 				4CF2F4B4285A4B60001C102F /* LaunchScreen.storyboard */,
@@ -137,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CF2F4AE285A4B5D001C102F /* ViewController.swift in Sources */,
+				4CF2F4C5285B9945001C102F /* MainRaceViewController.swift in Sources */,
 				4CF2F4AA285A4B5D001C102F /* AppDelegate.swift in Sources */,
+				4CF2F4C0285B97FE001C102F /* ViewController.swift in Sources */,
 				4CF2F4AC285A4B5D001C102F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
