@@ -12,7 +12,7 @@ class MainRaceViewController: UIViewController {
     var timerMain: Timer? = nil
     
     let randomNum = CGFloat(Int.random(in: 1..<100))
-    let randForDelay = TimeInterval(Int.random(in: 1..<3))
+    let randForDelay = TimeInterval(Int.random(in: 1..<4))
 
     @IBOutlet var mainView: UIView!
     
@@ -34,6 +34,7 @@ class MainRaceViewController: UIViewController {
         
         firstCoordinates()
         stripeAnimations()
+        timer()
         crash()
         animationsForCrash()
         carImageInGame()
@@ -67,7 +68,7 @@ class MainRaceViewController: UIViewController {
         stripeOne.center = CGPoint(x: stripeOne.center.x, y: -200)
         
         policeLeft.center = CGPoint(x: policeLeft.center.x + randomNum, y: -300 + randomNum)
-        policeRight.center = CGPoint(x: policeRight.center.x + randomNum, y: -300 + randomNum)
+        policeRight.center = CGPoint(x: policeRight.center.x - randomNum, y: -500 - randomNum)
       
     }
     
@@ -81,18 +82,36 @@ class MainRaceViewController: UIViewController {
         }, completion: nil)
     }
     
+//    physic contact
+    func timer() {
+        timerMain = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { (_) in
+            if  self.carOutlet.frame.intersects(self.viewBorderLeft.frame) == true || self.carOutlet.frame.intersects(self.viewBorderRight.frame) == true ||
+                self.policeLeft.layer.presentation()?.frame.intersects(self.carOutlet.frame) == true ||
+                self.policeRight.layer.presentation()?.frame.intersects(self.carOutlet.frame) == true {
+                self.crash()
+                self.timerMain?.invalidate()
+                
+                UIView.animate(withDuration: 2) {
+                    self.carOutlet.transform = CGAffineTransform(rotationAngle: (CGFloat(Double.pi - Double(Int.random(in: 1..<50)))))
+                }
+            }
+        }
+        
+        timerMain?.fire()
+    }
+    
     func crash() {
-//        let blurredView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
-//        blurredView.frame = self.view.bounds
-//        mainView.addSubview(blurredView)
-//        
-//        let alertController = UIAlertController(title: " CRASH ", message: "try again", preferredStyle: .alert)
-//        let alertAction = UIAlertAction(title: "Go back", style: .default) { (_) in
-//            self.navigationController?.popViewController(animated: true)
-//        }
-//        
-//        alertController.addAction(alertAction)
-//        present(alertController, animated: true, completion: nil)
+        let blurredView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
+        blurredView.frame = self.view.bounds
+        mainView.addSubview(blurredView)
+        
+        let alertController = UIAlertController(title: " CRASH ", message: "try again", preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "Go back", style: .default) { (_) in
+            self.navigationController?.popViewController(animated: true)
+        }
+        
+        alertController.addAction(alertAction)
+        present(alertController, animated: true, completion: nil)
     }
     
     func carImageInGame() {
