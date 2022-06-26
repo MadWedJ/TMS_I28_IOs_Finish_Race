@@ -137,19 +137,19 @@ class MainRaceViewController: UIViewController {
 
     
     func carImageInGame() {
-//        if SettingViewController.carImageNumber == 0 {
-//            carOutlet.image = UIImage(named: "car1")
-//        } else if SettingViewController.carImageNumber == 1 {
-//            carOutlet.image = UIImage(named: "car2")
-//        } else if SettingViewController.carImageNumber == 2 {
-//            carOutlet.image = UIImage(named: "car3")
-//        } else if SettingViewController.carImageNumber == 3 {
-//            carOutlet.image = UIImage(named: "car4")
-//        } else if SettingViewController.carImageNumber == 4 {
-//            carOutlet.image = UIImage(named: "car5")
-//        } else if SettingViewController.carImageNumber == 5 {
-//            carOutlet.image = UIImage(named: "car6")
-//        }
+        if SettingViewController.carImageNumber == 0 {
+            carOutlet.image = UIImage(named: "car1")
+        } else if SettingViewController.carImageNumber == 1 {
+            carOutlet.image = UIImage(named: "car2")
+        } else if SettingViewController.carImageNumber == 2 {
+            carOutlet.image = UIImage(named: "car3")
+        } else if SettingViewController.carImageNumber == 3 {
+            carOutlet.image = UIImage(named: "car4")
+        } else if SettingViewController.carImageNumber == 4 {
+            carOutlet.image = UIImage(named: "car5")
+        } else if SettingViewController.carImageNumber == 5 {
+            carOutlet.image = UIImage(named: "car6")
+        }
     }
     
 }
