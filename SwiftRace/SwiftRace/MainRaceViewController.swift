@@ -34,14 +34,16 @@ class MainRaceViewController: UIViewController {
         
         firstCoordinates()
         stripeAnimations()
+        animationsForCrash()
         timer()
         crash()
-        animationsForCrash()
         carImageInGame()
         
     }
     
-    
+    //MARK: - moving car
+    //MARK: -
+
     @IBAction func panCar(_ sender: UIPanGestureRecognizer) {
         print("pan")
 //        pan - enabled
@@ -58,11 +60,18 @@ class MainRaceViewController: UIViewController {
         sender.setTranslation(.zero, in: view)
     }
     
+    
+    //MARK: - animate road
+    //MARK: -
+
     func stripeAnimations() {
         UILabel.animate(withDuration: 0.5, delay: 1, options: [.repeat], animations: {
             self.stripeOne.center = CGPoint(x: self.stripeOne.center.x, y: 1200)
         }, completion: nil)
     }
+
+    //MARK: - first coordinates
+    //MARK: -
 
     func firstCoordinates() {
         stripeOne.center = CGPoint(x: stripeOne.center.x, y: -200)
@@ -72,6 +81,9 @@ class MainRaceViewController: UIViewController {
       
     }
     
+    //MARK: - animate crash
+    //MARK: -
+
     func animationsForCrash() {
         UIView.animate(withDuration: 4, delay: 2 + randForDelay, options: [.repeat], animations: {
             self.policeLeft.center = CGPoint(x: self.policeLeft.center.x, y: 1200)
@@ -82,7 +94,9 @@ class MainRaceViewController: UIViewController {
         }, completion: nil)
     }
     
-//    physic contact
+    //MARK: - physic contact
+    //MARK: -
+    
     func timer() {
         timerMain = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { (_) in
             if  self.carOutlet.frame.intersects(self.viewBorderLeft.frame) == true || self.carOutlet.frame.intersects(self.viewBorderRight.frame) == true ||
@@ -100,11 +114,15 @@ class MainRaceViewController: UIViewController {
         timerMain?.fire()
     }
     
+    //MARK: - crash alert
+    //MARK: -
+
+    
     func crash() {
-        let blurredView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
-        blurredView.frame = self.view.bounds
-        mainView.addSubview(blurredView)
-        
+//        let blurredView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
+//        blurredView.frame = self.view.bounds
+//        mainView.addSubview(blurredView)
+//
         let alertController = UIAlertController(title: " CRASH ", message: "try again", preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "Go back", style: .default) { (_) in
             self.navigationController?.popViewController(animated: true)
@@ -114,6 +132,10 @@ class MainRaceViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
     }
     
+    //MARK: - car in game
+    //MARK: -
+
+    
     func carImageInGame() {
 //        if SettingViewController.carImageNumber == 0 {
 //            carOutlet.image = UIImage(named: "car1")
@@ -121,6 +143,12 @@ class MainRaceViewController: UIViewController {
 //            carOutlet.image = UIImage(named: "car2")
 //        } else if SettingViewController.carImageNumber == 2 {
 //            carOutlet.image = UIImage(named: "car3")
+//        } else if SettingViewController.carImageNumber == 3 {
+//            carOutlet.image = UIImage(named: "car4")
+//        } else if SettingViewController.carImageNumber == 4 {
+//            carOutlet.image = UIImage(named: "car5")
+//        } else if SettingViewController.carImageNumber == 5 {
+//            carOutlet.image = UIImage(named: "car6")
 //        }
     }
     
