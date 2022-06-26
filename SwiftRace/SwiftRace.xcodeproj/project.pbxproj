@@ -14,6 +14,7 @@
 		4CF2F4B6285A4B60001C102F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF2F4B4285A4B60001C102F /* LaunchScreen.storyboard */; };
 		4CF2F4C0285B97FE001C102F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2F4BF285B97FE001C102F /* ViewController.swift */; };
 		4CF2F4C5285B9945001C102F /* MainRaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2F4C4285B9945001C102F /* MainRaceViewController.swift */; };
+		4CF2F4CA28611AAC001C102F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2F4C928611AAB001C102F /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4CF2F4B7285A4B60001C102F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CF2F4BF285B97FE001C102F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4CF2F4C4285B9945001C102F /* MainRaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRaceViewController.swift; sourceTree = "<group>"; };
+		4CF2F4C928611AAB001C102F /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				4CF2F4AB285A4B5D001C102F /* SceneDelegate.swift */,
 				4CF2F4BF285B97FE001C102F /* ViewController.swift */,
 				4CF2F4C4285B9945001C102F /* MainRaceViewController.swift */,
+				4CF2F4C928611AAB001C102F /* SettingViewController.swift */,
 				4CF2F4AF285A4B5D001C102F /* Main.storyboard */,
 				4CF2F4B2285A4B60001C102F /* Assets.xcassets */,
 				4CF2F4B4285A4B60001C102F /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF2F4CA28611AAC001C102F /* SettingViewController.swift in Sources */,
 				4CF2F4C5285B9945001C102F /* MainRaceViewController.swift in Sources */,
 				4CF2F4AA285A4B5D001C102F /* AppDelegate.swift in Sources */,
 				4CF2F4C0285B97FE001C102F /* ViewController.swift in Sources */,

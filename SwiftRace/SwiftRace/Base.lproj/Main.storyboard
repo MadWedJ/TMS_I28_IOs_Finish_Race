@@ -11,7 +11,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftRace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -27,61 +26,42 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start Button"/>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" image="swiftMain" translatesAutoresizingMaskIntoConstraints="NO" id="DcG-hP-kjE">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" image="swift-sport" translatesAutoresizingMaskIntoConstraints="NO" id="DcG-hP-kjE">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <color key="backgroundColor" red="0.16470588235294117" green="0.1803921568627451" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </variation>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="103.79464285714285"/>
         </scene>
-        <!--Race View Controller-->
+        <!--Main Race View Controller-->
         <scene sceneID="MpS-q5-smA">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pnA-DU-IEF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController title="MainRaceViewController" id="hnG-5O-DwU" userLabel="Race View Controller" customClass="MainRaceViewController" customModule="SwiftRace" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="MainRaceViewController" id="hnG-5O-DwU" userLabel="Main Race View Controller" customClass="MainRaceViewController" customModule="SwiftRace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k1b-Lh-VkZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="road" lineBreakMode="tailTruncation" baselineAdjustment="none" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wns-Hu-PuN">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="road" lineBreakMode="tailTruncation" baselineAdjustment="none" enabled="NO" adjustsFontSizeToFit="NO" id="wns-Hu-PuN">
+                                <rect key="frame" x="-2" y="-2" width="417" height="900"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <color key="textColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="deviceRGB"/>
                                 <color key="highlightedColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="deviceRGB"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="grassLeft" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6p-DW-vkD">
-                                <rect key="frame" x="0.0" y="44" width="30" height="818"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="Qbr-jY-zMH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemGreenColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="grassRight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISd-ic-r4C">
-                                <rect key="frame" x="384" y="44" width="30" height="818"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="5oE-Tf-D4k"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemGreenColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="car3" translatesAutoresizingMaskIntoConstraints="NO" id="tu5-xM-hUg">
-                                <rect key="frame" x="38" y="662" width="100" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="StripOne" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UyO-K6-LMf" userLabel="StripeOne">
-                                <rect key="frame" x="202" y="70" width="10" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="stripeOne" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UyO-K6-LMf" userLabel="StripeOne">
+                                <rect key="frame" x="204" y="79" width="6" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -89,33 +69,55 @@
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="grassRight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ISd-ic-r4C">
+                                <rect key="frame" x="377" y="-2" width="40" height="897"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="grassLeft" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e6p-DW-vkD">
+                                <rect key="frame" x="0.0" y="1" width="40" height="897"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car3" translatesAutoresizingMaskIntoConstraints="NO" id="Dnl-n5-jTy" userLabel="carOutlet">
+                                <rect key="frame" x="67" y="691" width="104" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="9Fx-fQ-Lf1" appends="YES" id="LY0-gq-6Ka"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1mj-3P-Uha"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="ISd-ic-r4C" firstAttribute="trailing" secondItem="1mj-3P-Uha" secondAttribute="trailing" id="073-56-mq2"/>
-                            <constraint firstItem="e6p-DW-vkD" firstAttribute="top" secondItem="1mj-3P-Uha" secondAttribute="top" id="A9L-Rt-JAn"/>
-                            <constraint firstItem="1mj-3P-Uha" firstAttribute="trailing" secondItem="wns-Hu-PuN" secondAttribute="trailing" id="FhT-Vr-wFA"/>
-                            <constraint firstItem="ISd-ic-r4C" firstAttribute="top" secondItem="1mj-3P-Uha" secondAttribute="top" id="JVN-50-PbB"/>
-                            <constraint firstItem="e6p-DW-vkD" firstAttribute="leading" secondItem="1mj-3P-Uha" secondAttribute="leading" id="LWw-Ee-kS2"/>
-                            <constraint firstItem="wns-Hu-PuN" firstAttribute="top" secondItem="1mj-3P-Uha" secondAttribute="top" id="eOJ-kR-jJJ"/>
-                            <constraint firstItem="wns-Hu-PuN" firstAttribute="leading" secondItem="1mj-3P-Uha" secondAttribute="leading" id="h2V-8t-RdA"/>
-                            <constraint firstItem="1mj-3P-Uha" firstAttribute="bottom" secondItem="e6p-DW-vkD" secondAttribute="bottom" id="iFD-ZO-IJn"/>
-                            <constraint firstItem="1mj-3P-Uha" firstAttribute="bottom" secondItem="wns-Hu-PuN" secondAttribute="bottom" id="jH0-As-ciD"/>
-                            <constraint firstItem="1mj-3P-Uha" firstAttribute="bottom" secondItem="ISd-ic-r4C" secondAttribute="bottom" id="nN4-Ht-7ba"/>
-                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="carOutlet" destination="Dnl-n5-jTy" id="HxR-OR-wbY"/>
+                        <outlet property="mainView" destination="k1b-Lh-VkZ" id="8uw-wh-aqp"/>
                         <outlet property="stripeOne" destination="UyO-K6-LMf" id="3hX-MF-XTZ"/>
+                        <outlet property="viewBorderLeft" destination="e6p-DW-vkD" id="xuU-r7-qqZ"/>
+                        <outlet property="viewBorderRight" destination="ISd-ic-r4C" id="ZMN-e5-dCC"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pnA-DU-IEF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="9Fx-fQ-Lf1">
+                    <connections>
+                        <action selector="panCar:" destination="hnG-5O-DwU" id="sng-5N-O3S"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1024.6376811594205" y="103.79464285714285"/>
         </scene>
     </scenes>
     <resources>
         <image name="car3" width="256" height="256"/>
-        <image name="swiftMain" width="600" height="337.5"/>
+        <image name="swift-sport" width="1284" height="2778"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

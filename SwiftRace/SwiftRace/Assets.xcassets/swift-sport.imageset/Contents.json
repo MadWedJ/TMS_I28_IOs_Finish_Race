@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "Suzuki-Swift-Sport-Beeracing-front-dynamic.png",
+      "filename" : "swift-sport.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Suzuki-Swift-Sport-Beeracing-front-dynamic-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Suzuki-Swift-Sport-Beeracing-front-dynamic-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
