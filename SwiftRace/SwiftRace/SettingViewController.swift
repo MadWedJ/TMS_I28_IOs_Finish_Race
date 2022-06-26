@@ -21,6 +21,9 @@ class SettingViewController: UIViewController {
         carImages.append(UIImage(named: "car1")!)
         carImages.append(UIImage(named: "car2")!)
         carImages.append(UIImage(named: "car3")!)
+        carImages.append(UIImage(named: "car4")!)
+        carImages.append(UIImage(named: "car5")!)
+        carImages.append(UIImage(named: "car6")!)
         
         carSelectOutlet.image = carImages[0]
         

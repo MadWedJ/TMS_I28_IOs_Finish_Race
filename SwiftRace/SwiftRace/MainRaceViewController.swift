@@ -15,26 +15,27 @@ class MainRaceViewController: UIViewController {
     let randForDelay = TimeInterval(Int.random(in: 1..<3))
 
     @IBOutlet var mainView: UIView!
-//    @IBOutlet var roadView: UIView!
-
-    
     
     @IBOutlet weak var viewBorderLeft: UILabel!
     @IBOutlet weak var viewBorderRight: UILabel!
     
-    
     @IBOutlet weak var stripeOne: UILabel!
+    
     @IBOutlet weak var carOutlet: UIImageView!
+    
+    @IBOutlet weak var policeLeft: UIImageView!
+    @IBOutlet weak var policeRight: UIImageView!
+    
     
  
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        // Do any additional setup after loading the view
         firstCoordinates()
         stripeAnimations()
+        crash()
+        animationsForCrash()
         carImageInGame()
         
     }
@@ -64,7 +65,34 @@ class MainRaceViewController: UIViewController {
 
     func firstCoordinates() {
         stripeOne.center = CGPoint(x: stripeOne.center.x, y: -200)
+        
+        policeLeft.center = CGPoint(x: policeLeft.center.x + randomNum, y: -300 + randomNum)
+        policeRight.center = CGPoint(x: policeRight.center.x + randomNum, y: -300 + randomNum)
       
+    }
+    
+    func animationsForCrash() {
+        UIView.animate(withDuration: 4, delay: 2 + randForDelay, options: [.repeat], animations: {
+            self.policeLeft.center = CGPoint(x: self.policeLeft.center.x, y: 1200)
+        }, completion: nil)
+        
+        UIView.animate(withDuration: 3, delay: 3 + randForDelay, options: [.repeat], animations: {
+            self.policeRight.center = CGPoint(x: self.policeRight.center.x, y: 1200)
+        }, completion: nil)
+    }
+    
+    func crash() {
+//        let blurredView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
+//        blurredView.frame = self.view.bounds
+//        mainView.addSubview(blurredView)
+//        
+//        let alertController = UIAlertController(title: " CRASH ", message: "try again", preferredStyle: .alert)
+//        let alertAction = UIAlertAction(title: "Go back", style: .default) { (_) in
+//            self.navigationController?.popViewController(animated: true)
+//        }
+//        
+//        alertController.addAction(alertAction)
+//        present(alertController, animated: true, completion: nil)
     }
     
     func carImageInGame() {

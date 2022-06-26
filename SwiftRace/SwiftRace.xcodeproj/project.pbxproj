@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CD5F5612868EECC0029B1E5 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5F5602868EECC0029B1E5 /* MenuViewController.swift */; };
 		4CF2F4AA285A4B5D001C102F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2F4A9285A4B5D001C102F /* AppDelegate.swift */; };
 		4CF2F4AC285A4B5D001C102F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2F4AB285A4B5D001C102F /* SceneDelegate.swift */; };
 		4CF2F4B1285A4B5D001C102F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF2F4AF285A4B5D001C102F /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4CD5F5602868EECC0029B1E5 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		4CF2F4A6285A4B5D001C102F /* SwiftRace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF2F4A9285A4B5D001C102F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CF2F4AB285A4B5D001C102F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				4CF2F4A9285A4B5D001C102F /* AppDelegate.swift */,
 				4CF2F4AB285A4B5D001C102F /* SceneDelegate.swift */,
+				4CD5F5602868EECC0029B1E5 /* MenuViewController.swift */,
 				4CF2F4BF285B97FE001C102F /* ViewController.swift */,
 				4CF2F4C4285B9945001C102F /* MainRaceViewController.swift */,
 				4CF2F4C928611AAB001C102F /* SettingViewController.swift */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CF2F4CA28611AAC001C102F /* SettingViewController.swift in Sources */,
+				4CD5F5612868EECC0029B1E5 /* MenuViewController.swift in Sources */,
 				4CF2F4C5285B9945001C102F /* MainRaceViewController.swift in Sources */,
 				4CF2F4AA285A4B5D001C102F /* AppDelegate.swift in Sources */,
 				4CF2F4C0285B97FE001C102F /* ViewController.swift in Sources */,
