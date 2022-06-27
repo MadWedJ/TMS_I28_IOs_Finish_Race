@@ -42,6 +42,15 @@ class SettingViewController: UIViewController {
             carSelectOutlet.image = carImages[2]
             SettingViewController.carImageNumber = 2
         } else if carSelectOutlet.image == carImages[2] {
+               carSelectOutlet.image = carImages[3]
+               SettingViewController.carImageNumber = 3
+        } else if carSelectOutlet.image == carImages[3] {
+               carSelectOutlet.image = carImages[4]
+               SettingViewController.carImageNumber = 4
+        } else if carSelectOutlet.image == carImages[4] {
+               carSelectOutlet.image = carImages[5]
+               SettingViewController.carImageNumber = 5
+        } else if carSelectOutlet.image == carImages[5] {
             carSelectOutlet.image = carImages[0]
             SettingViewController.carImageNumber = 0
         }
@@ -49,11 +58,20 @@ class SettingViewController: UIViewController {
     
     @IBAction func carSelectRightButton(_ sender: UIButton) {
         if carSelectOutlet.image == carImages[0] {
-            carSelectOutlet.image = carImages[2]
-            SettingViewController.carImageNumber = 2
+            carSelectOutlet.image = carImages[5]
+            SettingViewController.carImageNumber = 5
+        } else if carSelectOutlet.image == carImages[5] {
+            carSelectOutlet.image = carImages[4]
+            SettingViewController.carImageNumber = 4
+        } else if carSelectOutlet.image == carImages[4] {
+               carSelectOutlet.image = carImages[3]
+               SettingViewController.carImageNumber = 3
+        } else if carSelectOutlet.image == carImages[3] {
+               carSelectOutlet.image = carImages[2]
+               SettingViewController.carImageNumber = 2
         } else if carSelectOutlet.image == carImages[2] {
-            carSelectOutlet.image = carImages[1]
-            SettingViewController.carImageNumber = 1
+               carSelectOutlet.image = carImages[1]
+               SettingViewController.carImageNumber = 1
         } else if carSelectOutlet.image == carImages[1] {
             carSelectOutlet.image = carImages[0]
             SettingViewController.carImageNumber = 0

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sqK-oz-dFe">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
@@ -9,32 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Menu View Controller-->
-        <scene sceneID="CIr-oq-Sme">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="IHI-Kf-hdM" customClass="MenuViewController" customModule="SwiftRace" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="FDg-GP-cX8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="ORu-5x-Wyy"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="If6-w6-0P8"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8IE-Sw-HMF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="138" y="848"/>
-        </scene>
-        <!--Setting View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="HS4-7Y-Nxf">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="khv-8e-hBr" customClass="SettingViewController" customModule="SwiftRace" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="X5y-hX-JRl">
+                <viewController modalPresentationStyle="fullScreen" id="khv-8e-hBr" userLabel="Settings View Controller" customClass="SettingViewController" customModule="SwiftRace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="X5y-hX-JRl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Car" translatesAutoresizingMaskIntoConstraints="NO" id="hXz-pR-X81" userLabel="CarSelectOutlet">
-                                <rect key="frame" x="82" y="148" width="249" height="600"/>
+                                <rect key="frame" x="82" y="148" width="250" height="600"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZA-UJ-n5H" userLabel="carNextButton">
@@ -51,7 +35,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdj-0r-Zvp" userLabel="carPreviousButton">
-                                <rect key="frame" x="19" y="418" width="51" height="60"/>
+                                <rect key="frame" x="20" y="418" width="50" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <color key="tintColor" red="0.0" green="0.73259007929999997" blue="0.57432562109999996" alpha="1" colorSpace="deviceRGB"/>
@@ -63,39 +47,47 @@
                                     <action selector="carSelectLeftButton:" destination="khv-8e-hBr" eventType="touchUpInside" id="atE-qS-TUP"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a car" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mry-At-ddH">
-                                <rect key="frame" x="84" y="80" width="247" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <color key="textColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jdo-Ga-N35">
                                 <rect key="frame" x="25" y="44" width="104" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="BackCarButton"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="DOQ-Mg-Zc9"/>
+                                    <action selector="backToRootButton:" destination="khv-8e-hBr" eventType="touchUpInside" id="lc4-XC-tdj"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="czU-um-8Wp"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
                     </view>
-                    <navigationItem key="navigationItem" id="JXo-N3-LSn"/>
+                    <navigationItem key="navigationItem" title="Select a car" id="JXo-N3-LSn"/>
                     <connections>
                         <outlet property="carSelectOutlet" destination="hXz-pR-X81" id="3ee-hK-4q5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p70-VB-aUp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-849.27536231884062" y="103.79464285714285"/>
+            <point key="canvasLocation" x="138" y="837"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NDa-Fb-AeF">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="sqK-oz-dFe" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YKF-RL-qwx">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dxL-7u-zSf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tDv-9f-6GQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-709" y="104"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftRace" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Menu View ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -103,15 +95,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="MsL-a3-57w" appends="YES" id="phH-2I-fZc"/>
+                                </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfR-um-IFL">
                                 <rect key="frame" x="20" y="44" width="132" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="settingMenuButton"/>
                                 <connections>
-                                    <action selector="menuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zi6-lB-deK"/>
-                                    <action selector="settingMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uD8-sh-eYM"/>
-                                    <segue destination="khv-8e-hBr" kind="show" id="QtV-Xq-3d8"/>
+                                    <segue destination="khv-8e-hBr" kind="show" id="37O-wV-IUL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Shg-A1-oUC">
@@ -119,8 +113,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start Button"/>
                                 <connections>
-                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O18-76-0dI"/>
-                                    <segue destination="hnG-5O-DwU" kind="show" id="ZSt-yc-Fqg"/>
+                                    <segue destination="hnG-5O-DwU" kind="show" id="fhj-Tj-Y82"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -133,7 +126,7 @@
                     <navigationItem key="navigationItem" id="fOz-wP-ecO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="s3f-oV-D4j"/>
+                <tapGestureRecognizer id="MsL-a3-57w"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="103.79464285714285"/>
         </scene>
@@ -146,7 +139,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="road" lineBreakMode="tailTruncation" baselineAdjustment="none" enabled="NO" adjustsFontSizeToFit="NO" id="wns-Hu-PuN">
-                                <rect key="frame" x="-2" y="-2" width="416" height="900"/>
+                                <rect key="frame" x="-2" y="-2" width="417" height="900"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
@@ -164,7 +157,7 @@
                                 <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car3" translatesAutoresizingMaskIntoConstraints="NO" id="Dnl-n5-jTy" userLabel="carOutlet">
-                                <rect key="frame" x="66" y="691" width="90" height="170"/>
+                                <rect key="frame" x="67" y="691" width="90" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -172,7 +165,7 @@
                                 </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="grassLeft" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e6p-DW-vkD">
-                                <rect key="frame" x="0.0" y="1" width="39" height="897"/>
+                                <rect key="frame" x="0.0" y="1" width="40" height="897"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -192,7 +185,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="BackRaceButton"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="lXm-ge-c07"/>
+                                    <action selector="backButton:" destination="hnG-5O-DwU" eventType="touchUpInside" id="y4i-2c-jF2"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="police" translatesAutoresizingMaskIntoConstraints="NO" id="yS4-ca-plf" userLabel="policeRight">
@@ -200,7 +193,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="police" translatesAutoresizingMaskIntoConstraints="NO" id="duh-pT-ULi" userLabel="policeLeft">
-                                <rect key="frame" x="66" y="103" width="65" height="170"/>
+                                <rect key="frame" x="67" y="103" width="65" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -225,12 +218,9 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1099" y="104"/>
+            <point key="canvasLocation" x="972" y="104"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="DOQ-Mg-Zc9"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Car" width="256" height="256"/>
         <image name="arrowshape.turn.up.backward.fill" catalog="system" width="128" height="106"/>
@@ -240,6 +230,9 @@
         <image name="swift-sport" width="1284" height="2778"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -60,6 +60,14 @@ class MainRaceViewController: UIViewController {
         sender.setTranslation(.zero, in: view)
     }
     
+    //MARK: - back to start menu
+    //MARK: -
+
+    
+    @IBAction func backButton(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
+    
     
     //MARK: - animate road
     //MARK: -
@@ -119,10 +127,10 @@ class MainRaceViewController: UIViewController {
 
     
     func crash() {
-//        let blurredView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
-//        blurredView.frame = self.view.bounds
-//        mainView.addSubview(blurredView)
-//
+        let blurredView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
+        blurredView.frame = self.view.bounds
+        mainView.addSubview(blurredView)
+
         let alertController = UIAlertController(title: " CRASH ", message: "try again", preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "Go back", style: .default) { (_) in
             self.navigationController?.popViewController(animated: true)
