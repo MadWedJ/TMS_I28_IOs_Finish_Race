@@ -1,0 +1,30 @@
+
+/* Class = "UIButton"; normalTitle = "settingMenuButton"; ObjectID = "HfR-um-IFL"; */
+"HfR-um-IFL.normalTitle" = "Настройки";
+
+/* Class = "UILabel"; text = "grassRight"; ObjectID = "ISd-ic-r4C"; */
+"ISd-ic-r4C.text" = "grassRight";
+
+/* Class = "UINavigationItem"; title = "Select a car"; ObjectID = "JXo-N3-LSn"; */
+"JXo-N3-LSn.title" = "Выбери тачку!";
+
+/* Class = "UIButton"; normalTitle = "BackCarButton"; ObjectID = "Jdo-Ga-N35"; */
+"Jdo-Ga-N35.normalTitle" = "Назад";
+
+/* Class = "UIButton"; normalTitle = "Start Button"; ObjectID = "Shg-A1-oUC"; */
+"Shg-A1-oUC.normalTitle" = "Погнали!";
+
+/* Class = "UILabel"; text = "stripeOne"; ObjectID = "UyO-K6-LMf"; */
+"UyO-K6-LMf.text" = "stripeOne";
+
+/* Class = "UILabel"; text = "grassLeft"; ObjectID = "e6p-DW-vkD"; */
+"e6p-DW-vkD.text" = "grassLeft";
+
+/* Class = "UIViewController"; title = "MainRaceViewController"; ObjectID = "hnG-5O-DwU"; */
+"hnG-5O-DwU.title" = "MainRaceViewController";
+
+/* Class = "UIButton"; normalTitle = "BackRaceButton"; ObjectID = "iTg-JQ-d26"; */
+"iTg-JQ-d26.normalTitle" = "Назад";
+
+/* Class = "UILabel"; text = "road"; ObjectID = "wns-Hu-PuN"; */
+"wns-Hu-PuN.text" = "road";

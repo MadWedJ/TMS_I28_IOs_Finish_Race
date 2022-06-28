@@ -107,8 +107,7 @@ class MainRaceViewController: UIViewController {
     
     func timer() {
         timerMain = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { (_) in
-            if  self.carOutlet.frame.intersects(self.viewBorderLeft.frame) == true || self.carOutlet.frame.intersects(self.viewBorderRight.frame) == true ||
-                self.policeLeft.layer.presentation()?.frame.intersects(self.carOutlet.frame) == true ||
+            if  self.carOutlet.frame.intersects(self.viewBorderLeft.frame) == true || self.carOutlet.frame.intersects(self.viewBorderRight.frame) == true || self.policeLeft.layer.presentation()?.frame.intersects(self.carOutlet.frame) == true ||
                 self.policeRight.layer.presentation()?.frame.intersects(self.carOutlet.frame) == true {
                 self.crash()
                 self.timerMain?.invalidate()
@@ -127,10 +126,10 @@ class MainRaceViewController: UIViewController {
 
     
     func crash() {
-        let blurredView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
-        blurredView.frame = self.view.bounds
-        mainView.addSubview(blurredView)
-
+//        let blurredView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
+//        blurredView.frame = self.view.bounds
+//        mainView.addSubview(blurredView)
+//
         let alertController = UIAlertController(title: " CRASH ", message: "try again", preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "Go back", style: .default) { (_) in
             self.navigationController?.popViewController(animated: true)
