@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SpriteKit
 
 class MainRaceViewController: UIViewController {
     
@@ -13,6 +14,9 @@ class MainRaceViewController: UIViewController {
     
     let randomNum = CGFloat(Int.random(in: 1..<100))
     let randForDelay = TimeInterval(Int.random(in: 1..<4))
+    
+    var countDown = 1
+    var stopEverything = true
 
     @IBOutlet var mainView: UIView!
     
@@ -25,6 +29,8 @@ class MainRaceViewController: UIViewController {
     
     @IBOutlet weak var policeLeft: UIImageView!
     @IBOutlet weak var policeRight: UIImageView!
+    
+    @IBOutlet weak var countDownLabel: UILabel!
     
     
  
@@ -97,7 +103,7 @@ class MainRaceViewController: UIViewController {
             self.policeLeft.center = CGPoint(x: self.policeLeft.center.x, y: 1200)
         }, completion: nil)
         
-        UIView.animate(withDuration: 3, delay: 3 + randForDelay, options: [.repeat], animations: {
+        UIView.animate(withDuration: 4, delay: 3 + randForDelay, options: [.repeat], animations: {
             self.policeRight.center = CGPoint(x: self.policeRight.center.x, y: 1200)
         }, completion: nil)
     }
@@ -124,26 +130,33 @@ class MainRaceViewController: UIViewController {
     //MARK: - crash alert
     //MARK: -
 
+    struct ColliderType {
+        static let CAR_COLLIDER : UInt32 = 0
+        static let ITEM_COLLIDER : UInt32 = 1
+    }
     
     func crash() {
-//        let blurredView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
-//        blurredView.frame = self.view.bounds
-//        mainView.addSubview(blurredView)
+ 
+        
+        
+////        let blurredView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
+////        blurredView.frame = self.view.bounds
+////        mainView.addSubview(blurredView)
+////
 //
-       
-//        let alertController = UIAlertController(title: " CRASH ", message: "try again", preferredStyle: .alert)
-//        let alertAction = UIAlertAction(title: "Go back", style: .default) { (_) in
-        
-        
-        let alertController = UIAlertController(title: NSLocalizedString("text_AlertController_title", comment: ""), message: NSLocalizedString("text_AlertController_message", comment: ""), preferredStyle: .alert)
-        
-        let alertAction = UIAlertAction(title: NSLocalizedString("text_AlertAction_title", comment: "") , style: .default) { (_) in
-           
-            self.navigationController?.popViewController(animated: true)
-        }
-        
-        alertController.addAction(alertAction)
-        present(alertController, animated: true, completion: nil)
+////        let alertController = UIAlertController(title: " CRASH ", message: "try again", preferredStyle: .alert)
+////        let alertAction = UIAlertAction(title: "Go back", style: .default) { (_) in
+//
+//
+//        let alertController = UIAlertController(title: NSLocalizedString("text_AlertController_title", comment: ""), message: NSLocalizedString("text_AlertController_message", comment: ""), preferredStyle: .alert)
+//
+//        let alertAction = UIAlertAction(title: NSLocalizedString("text_AlertAction_title", comment: "") , style: .default) { (_) in
+//
+//            self.navigationController?.popViewController(animated: true)
+//        }
+//
+//        alertController.addAction(alertAction)
+//        present(alertController, animated: true, completion: nil)
     }
     
     //MARK: - car in game
@@ -165,5 +178,31 @@ class MainRaceViewController: UIViewController {
             carOutlet.image = UIImage(named: "car6")
         }
     }
+    
+//    func startCountDown() {
+//        if countDown > 0 {
+//            if countDown < 4 {
+//                let countDownLabel = UILabel()
+//                countDownLabel.fontName = "AvenirNext-Bold"
+//                countDownLabel.fontColor = SKColor.white
+//                countDownLabel.fontSize = 300
+//                countDownLabel.text = String(countDown)
+//                countDownLabel.position = CGPoint(x: 0, y: 0)
+//                countDownLabel.zPosition = 300
+//                countDownLabel.name = "cLabel"
+//                countDownLabel.horizontalAlignmentMode = .center
+//                addChild(countDownLabel)
+//
+//                let deadTime = DispatchTime.now() + 0.5
+//                DispatchQueue.main.asyncAfter(deadline: deadTime, execute: {
+//                    countDownLabel.removeFromParent()
+//                })
+//            }
+//            countDown += 1
+//            if countDown == 4 {
+//                self.stopEverything = false
+//            }
+//        }
+//    }
     
 }

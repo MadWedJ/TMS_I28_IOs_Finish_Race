@@ -11,16 +11,14 @@ class ViewController: UIViewController {
     
     var menuOut = true
     
-//    @IBOutlet weak var menuViewOutlet: UIView!
-//    @IBOutlet weak var StartButton: UIButton!
-    
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//    }
+    @IBOutlet weak var menuViewOutlet: UIView!
+    @IBOutlet weak var startButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        startButton.text = "START"
+//        startButton.font = UIFont(name: "SegoeUI-Bold", size: 40) ?? .systemFont(ofSize: 40)
         
 
         // Do any additional setup after loading the view.

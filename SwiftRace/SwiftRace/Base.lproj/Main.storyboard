@@ -109,9 +109,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Shg-A1-oUC">
-                                <rect key="frame" x="165" y="745" width="84" height="30"/>
+                                <rect key="frame" x="108" y="742" width="211" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Start Button"/>
+                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="40"/>
+                                <state key="normal" title="Start Button">
+                                    <color key="titleColor" systemColor="systemYellowColor"/>
+                                </state>
                                 <connections>
                                     <segue destination="hnG-5O-DwU" kind="show" id="fhj-Tj-Y82"/>
                                 </connections>
@@ -124,6 +127,10 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="fOz-wP-ecO"/>
+                    <connections>
+                        <outlet property="StartButton" destination="Shg-A1-oUC" id="j2z-WE-AOp"/>
+                        <outlet property="menuViewOutlet" destination="HfR-um-IFL" id="zB9-Bo-tY1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="MsL-a3-57w"/>
@@ -196,6 +203,13 @@
                                 <rect key="frame" x="67" y="103" width="65" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="countDown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6W-8D-lWw">
+                                <rect key="frame" x="282" y="44" width="87" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1mj-3P-Uha"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -203,6 +217,7 @@
                     <navigationItem key="navigationItem" id="0Nt-Sf-9Ty"/>
                     <connections>
                         <outlet property="carOutlet" destination="Dnl-n5-jTy" id="HxR-OR-wbY"/>
+                        <outlet property="countDown" destination="O6W-8D-lWw" id="gOR-uC-bBe"/>
                         <outlet property="mainView" destination="k1b-Lh-VkZ" id="8uw-wh-aqp"/>
                         <outlet property="policeLeft" destination="duh-pT-ULi" id="9kz-dN-QeW"/>
                         <outlet property="policeRight" destination="yS4-ca-plf" id="Oje-dA-U5M"/>
@@ -236,6 +251,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
