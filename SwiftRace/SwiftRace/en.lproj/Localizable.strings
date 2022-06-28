@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  SwiftRace
+
+  Created by Michael on 6/28/22.
+  
+*/
+
+"text_AlertController_title" = "CRASH";
+"text_AlertController_message" = "Try again";
+"text_AlertAction_title" = "Go back";

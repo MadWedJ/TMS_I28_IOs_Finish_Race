@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CBAFBEA286B641000325844 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CBAFBEC286B641000325844 /* Localizable.strings */; };
 		4CD5F5612868EECC0029B1E5 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5F5602868EECC0029B1E5 /* MenuViewController.swift */; };
 		4CF2F4AA285A4B5D001C102F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2F4A9285A4B5D001C102F /* AppDelegate.swift */; };
 		4CF2F4AC285A4B5D001C102F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2F4AB285A4B5D001C102F /* SceneDelegate.swift */; };
@@ -20,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		4CBAFBE5286B609200325844 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		4CBAFBEB286B641000325844 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4CBAFBEE286B642300325844 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4CD5F5602868EECC0029B1E5 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		4CF2F4A6285A4B5D001C102F /* SwiftRace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF2F4A9285A4B5D001C102F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +76,7 @@
 				4CF2F4B2285A4B60001C102F /* Assets.xcassets */,
 				4CF2F4B4285A4B60001C102F /* LaunchScreen.storyboard */,
 				4CF2F4B7285A4B60001C102F /* Info.plist */,
+				4CBAFBEC286B641000325844 /* Localizable.strings */,
 			);
 			path = SwiftRace;
 			sourceTree = "<group>";
@@ -136,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CF2F4B6285A4B60001C102F /* LaunchScreen.storyboard in Resources */,
+				4CBAFBEA286B641000325844 /* Localizable.strings in Resources */,
 				4CF2F4B3285A4B60001C102F /* Assets.xcassets in Resources */,
 				4CF2F4B1285A4B5D001C102F /* Main.storyboard in Resources */,
 			);
@@ -160,6 +165,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		4CBAFBEC286B641000325844 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CBAFBEB286B641000325844 /* en */,
+				4CBAFBEE286B642300325844 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		4CF2F4AF285A4B5D001C102F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

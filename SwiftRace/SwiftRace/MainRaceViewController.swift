@@ -130,8 +130,15 @@ class MainRaceViewController: UIViewController {
 //        blurredView.frame = self.view.bounds
 //        mainView.addSubview(blurredView)
 //
-        let alertController = UIAlertController(title: " CRASH ", message: "try again", preferredStyle: .alert)
-        let alertAction = UIAlertAction(title: "Go back", style: .default) { (_) in
+       
+//        let alertController = UIAlertController(title: " CRASH ", message: "try again", preferredStyle: .alert)
+//        let alertAction = UIAlertAction(title: "Go back", style: .default) { (_) in
+        
+        
+        let alertController = UIAlertController(title: NSLocalizedString("text_AlertController_title", comment: ""), message: NSLocalizedString("text_AlertController_message", comment: ""), preferredStyle: .alert)
+        
+        let alertAction = UIAlertAction(title: NSLocalizedString("text_AlertAction_title", comment: "") , style: .default) { (_) in
+           
             self.navigationController?.popViewController(animated: true)
         }
         
