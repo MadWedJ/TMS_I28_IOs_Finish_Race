@@ -13,9 +13,7 @@ class MainRaceViewController: UIViewController {
     
     let randomNum = CGFloat(Int.random(in: 1..<100))
     let randForDelay = TimeInterval(Int.random(in: 1..<4))
-    
-    var countDown = 1
-    var stopEverything = true
+
 
     @IBOutlet var mainView: UIView!
     
@@ -41,7 +39,7 @@ class MainRaceViewController: UIViewController {
         stripeAnimations()
         animationsForCrash()
         timer()
-        crash()
+        alert()
         carImageInGame()
         
     }
@@ -114,7 +112,7 @@ class MainRaceViewController: UIViewController {
         timerMain = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { (_) in
             if  self.carOutlet.frame.intersects(self.viewBorderLeft.frame) == true || self.carOutlet.frame.intersects(self.viewBorderRight.frame) == true || self.policeLeft.layer.presentation()?.frame.intersects(self.carOutlet.frame) == true ||
                 self.policeRight.layer.presentation()?.frame.intersects(self.carOutlet.frame) == true {
-                self.crash()
+                self.alert()
                 self.timerMain?.invalidate()
                 
                 UIView.animate(withDuration: 2) {
@@ -129,28 +127,21 @@ class MainRaceViewController: UIViewController {
     //MARK: - crash alert
     //MARK: -
     
-    func crash() {
+    func alert() {
  
+        let blurredView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
+        blurredView.frame = self.view.bounds
+        mainView.addSubview(blurredView)
         
+        let alertController = UIAlertController(title:NSLocalizedString("text_AlertController_title", comment: ""), message: NSLocalizedString("text_AlertController_message", comment: ""), preferredStyle: .alert)
         
-////        let blurredView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
-////        blurredView.frame = self.view.bounds
-////        mainView.addSubview(blurredView)
-////
-//
-////        let alertController = UIAlertController(title: " CRASH ", message: "try again", preferredStyle: .alert)
-////        let alertAction = UIAlertAction(title: "Go back", style: .default) { (_) in
-//
-//
-//        let alertController = UIAlertController(title: NSLocalizedString("text_AlertController_title", comment: ""), message: NSLocalizedString("text_AlertController_message", comment: ""), preferredStyle: .alert)
-//
-//        let alertAction = UIAlertAction(title: NSLocalizedString("text_AlertAction_title", comment: "") , style: .default) { (_) in
-//
-//            self.navigationController?.popViewController(animated: true)
-//        }
-//
-//        alertController.addAction(alertAction)
-//        present(alertController, animated: true, completion: nil)
+        let alertAction = UIAlertAction(title: NSLocalizedString("text_AlertAction_title", comment: ""), style: .default) { (_) in
+            self.navigationController?.popViewController(animated: true)
+        }
+        
+        alertController.addAction(alertAction)
+        present(alertController, animated: true, completion: nil)
+
     }
     
     //MARK: - car in game
@@ -173,30 +164,7 @@ class MainRaceViewController: UIViewController {
         }
     }
     
-//    func startCountDown() {
-//        if countDown > 0 {
-//            if countDown < 4 {
-//                let countDownLabel = UILabel()
-//                countDownLabel.fontName = "AvenirNext-Bold"
-//                countDownLabel.fontColor = SKColor.white
-//                countDownLabel.fontSize = 300
-//                countDownLabel.text = String(countDown)
-//                countDownLabel.position = CGPoint(x: 0, y: 0)
-//                countDownLabel.zPosition = 300
-//                countDownLabel.name = "cLabel"
-//                countDownLabel.horizontalAlignmentMode = .center
-//                addChild(countDownLabel)
-//
-//                let deadTime = DispatchTime.now() + 0.5
-//                DispatchQueue.main.asyncAfter(deadline: deadTime, execute: {
-//                    countDownLabel.removeFromParent()
-//                })
-//            }
-//            countDown += 1
-//            if countDown == 4 {
-//                self.stopEverything = false
-//            }
-//        }
-//    }
+    func score() {
+    }
     
 }
