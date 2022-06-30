@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SpriteKit
 
 class MainRaceViewController: UIViewController {
     
@@ -129,11 +128,6 @@ class MainRaceViewController: UIViewController {
     
     //MARK: - crash alert
     //MARK: -
-
-    struct ColliderType {
-        static let CAR_COLLIDER : UInt32 = 0
-        static let ITEM_COLLIDER : UInt32 = 1
-    }
     
     func crash() {
  
