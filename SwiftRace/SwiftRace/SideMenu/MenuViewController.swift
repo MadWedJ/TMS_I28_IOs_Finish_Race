@@ -17,21 +17,15 @@ import UIKit
         weak var delegate: MenuViewControllerDelegate?
         
         enum MenuOptions: String, CaseIterable {
-            case home = "Home"
             case info = "Info"
-            case alert = "Alert"
-            case actionSheet = "Action Sheet"
+            case chooseCar = "Choose a car"
             
             var imageName: String {
                 switch self {
                 
-                case .home:
-                    return "house"
                 case .info:
                     return "airplane"
-                case .alert:
-                    return "bell"
-                case .actionSheet:
+                case .chooseCar:
                     return "gear"
                 }
             }

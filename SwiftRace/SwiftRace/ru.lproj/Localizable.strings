@@ -9,3 +9,6 @@
 "text_AlertController_title" = "Разбил тачку!";
 "text_AlertController_message" = "Попробуй снова";
 "text_AlertAction_title" = "На главную";
+
+"text_SideMenu_info" = "Информация";
+"text_SideMenu_car" = "Выбрать тачку";

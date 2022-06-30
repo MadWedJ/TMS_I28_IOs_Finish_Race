@@ -1,5 +1,5 @@
 //
-//  MainRaceViewController.swift
+//  RaceViewController.swift
 //  SwiftRace
 //
 //  Created by Michael on 6/16/22.
@@ -7,12 +7,12 @@
 
 import UIKit
 
-class MainRaceViewController: UIViewController {
+class RaceViewController: UIViewController {
     
     var timerMain: Timer? = nil
     
     let randomNum = CGFloat(Int.random(in: 1..<100))
-    let randForDelay = TimeInterval(Int.random(in: 1..<4))
+    let randForDelay = TimeInterval(Int.random(in: 1..<2))
 
 
     @IBOutlet var mainView: UIView!
@@ -27,7 +27,8 @@ class MainRaceViewController: UIViewController {
     @IBOutlet weak var policeLeft: UIImageView!
     @IBOutlet weak var policeRight: UIImageView!
     
-    @IBOutlet weak var countDownLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
+    
     
     
  
@@ -105,7 +106,7 @@ class MainRaceViewController: UIViewController {
         }, completion: nil)
     }
     
-    //MARK: - physic contact
+    //MARK: - timer check and physic contact
     //MARK: -
     
     func timer() {
@@ -133,7 +134,7 @@ class MainRaceViewController: UIViewController {
         blurredView.frame = self.view.bounds
         mainView.addSubview(blurredView)
         
-        let alertController = UIAlertController(title:NSLocalizedString("text_AlertController_title", comment: ""), message: NSLocalizedString("text_AlertController_message", comment: ""), preferredStyle: .alert)
+        let alertController = UIAlertController(title: NSLocalizedString("text_AlertController_title", comment: ""), message: NSLocalizedString("text_AlertController_message", comment: ""), preferredStyle: .alert)
         
         let alertAction = UIAlertAction(title: NSLocalizedString("text_AlertAction_title", comment: ""), style: .default) { (_) in
             self.navigationController?.popViewController(animated: true)
@@ -149,17 +150,17 @@ class MainRaceViewController: UIViewController {
 
     
     func carImageInGame() {
-        if SettingViewController.carImageNumber == 0 {
+        if ChooseCarViewController.carImageNumber == 0 {
             carOutlet.image = UIImage(named: "car1")
-        } else if SettingViewController.carImageNumber == 1 {
+        } else if ChooseCarViewController.carImageNumber == 1 {
             carOutlet.image = UIImage(named: "car2")
-        } else if SettingViewController.carImageNumber == 2 {
+        } else if ChooseCarViewController.carImageNumber == 2 {
             carOutlet.image = UIImage(named: "car3")
-        } else if SettingViewController.carImageNumber == 3 {
+        } else if ChooseCarViewController.carImageNumber == 3 {
             carOutlet.image = UIImage(named: "car4")
-        } else if SettingViewController.carImageNumber == 4 {
+        } else if ChooseCarViewController.carImageNumber == 4 {
             carOutlet.image = UIImage(named: "car5")
-        } else if SettingViewController.carImageNumber == 5 {
+        } else if ChooseCarViewController.carImageNumber == 5 {
             carOutlet.image = UIImage(named: "car6")
         }
     }

@@ -10,15 +10,17 @@
 		4CBAFBEA286B641000325844 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CBAFBEC286B641000325844 /* Localizable.strings */; };
 		4CBAFBF3286B7E1600325844 /* 43303976993.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CBAFBF1286B7E1600325844 /* 43303976993.ttf */; };
 		4CBAFBF4286B7E1600325844 /* 35497908580.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CBAFBF2286B7E1600325844 /* 35497908580.ttf */; };
+		4CBAFC07286DFE2700325844 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBAFC06286DFE2700325844 /* InfoViewController.swift */; };
+		4CBAFC0A286DFED600325844 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBAFC09286DFED600325844 /* ContainerViewController.swift */; };
 		4CD5F5612868EECC0029B1E5 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5F5602868EECC0029B1E5 /* MenuViewController.swift */; };
 		4CF2F4AA285A4B5D001C102F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2F4A9285A4B5D001C102F /* AppDelegate.swift */; };
 		4CF2F4AC285A4B5D001C102F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2F4AB285A4B5D001C102F /* SceneDelegate.swift */; };
 		4CF2F4B1285A4B5D001C102F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF2F4AF285A4B5D001C102F /* Main.storyboard */; };
 		4CF2F4B3285A4B60001C102F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF2F4B2285A4B60001C102F /* Assets.xcassets */; };
 		4CF2F4B6285A4B60001C102F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF2F4B4285A4B60001C102F /* LaunchScreen.storyboard */; };
-		4CF2F4C0285B97FE001C102F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2F4BF285B97FE001C102F /* ViewController.swift */; };
+		4CF2F4C0285B97FE001C102F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2F4BF285B97FE001C102F /* MainViewController.swift */; };
 		4CF2F4C5285B9945001C102F /* MainRaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2F4C4285B9945001C102F /* MainRaceViewController.swift */; };
-		4CF2F4CA28611AAC001C102F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2F4C928611AAB001C102F /* SettingViewController.swift */; };
+		4CF2F4CA28611AAC001C102F /* ChooseCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2F4C928611AAB001C102F /* ChooseCarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		4CBAFBEE286B642300325844 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4CBAFBF1286B7E1600325844 /* 43303976993.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 43303976993.ttf; sourceTree = "<group>"; };
 		4CBAFBF2286B7E1600325844 /* 35497908580.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 35497908580.ttf; sourceTree = "<group>"; };
+		4CBAFC06286DFE2700325844 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		4CBAFC09286DFED600325844 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		4CD5F5602868EECC0029B1E5 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		4CF2F4A6285A4B5D001C102F /* SwiftRace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF2F4A9285A4B5D001C102F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,9 +39,9 @@
 		4CF2F4B2285A4B60001C102F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CF2F4B5285A4B60001C102F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CF2F4B7285A4B60001C102F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CF2F4BF285B97FE001C102F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4CF2F4BF285B97FE001C102F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4CF2F4C4285B9945001C102F /* MainRaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRaceViewController.swift; sourceTree = "<group>"; };
-		4CF2F4C928611AAB001C102F /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		4CF2F4C928611AAB001C102F /* ChooseCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,16 @@
 				4CBAFBF2286B7E1600325844 /* 35497908580.ttf */,
 			);
 			path = "Segoe UI";
+			sourceTree = "<group>";
+		};
+		4CBAFC02286DF40C00325844 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				4CD5F5602868EECC0029B1E5 /* MenuViewController.swift */,
+				4CBAFC06286DFE2700325844 /* InfoViewController.swift */,
+				4CBAFC09286DFED600325844 /* ContainerViewController.swift */,
+			);
+			path = SideMenu;
 			sourceTree = "<group>";
 		};
 		4CF2F49D285A4B5D001C102F = {
@@ -82,10 +96,10 @@
 				4CBAFBF0286B7E1600325844 /* Segoe UI */,
 				4CF2F4A9285A4B5D001C102F /* AppDelegate.swift */,
 				4CF2F4AB285A4B5D001C102F /* SceneDelegate.swift */,
-				4CD5F5602868EECC0029B1E5 /* MenuViewController.swift */,
-				4CF2F4BF285B97FE001C102F /* ViewController.swift */,
+				4CF2F4BF285B97FE001C102F /* MainViewController.swift */,
 				4CF2F4C4285B9945001C102F /* MainRaceViewController.swift */,
-				4CF2F4C928611AAB001C102F /* SettingViewController.swift */,
+				4CBAFC02286DF40C00325844 /* SideMenu */,
+				4CF2F4C928611AAB001C102F /* ChooseCarViewController.swift */,
 				4CF2F4AF285A4B5D001C102F /* Main.storyboard */,
 				4CF2F4B2285A4B60001C102F /* Assets.xcassets */,
 				4CF2F4B4285A4B60001C102F /* LaunchScreen.storyboard */,
@@ -169,11 +183,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CF2F4CA28611AAC001C102F /* SettingViewController.swift in Sources */,
+				4CF2F4CA28611AAC001C102F /* ChooseCarViewController.swift in Sources */,
 				4CD5F5612868EECC0029B1E5 /* MenuViewController.swift in Sources */,
+				4CBAFC0A286DFED600325844 /* ContainerViewController.swift in Sources */,
 				4CF2F4C5285B9945001C102F /* MainRaceViewController.swift in Sources */,
+				4CBAFC07286DFE2700325844 /* InfoViewController.swift in Sources */,
 				4CF2F4AA285A4B5D001C102F /* AppDelegate.swift in Sources */,
-				4CF2F4C0285B97FE001C102F /* ViewController.swift in Sources */,
+				4CF2F4C0285B97FE001C102F /* MainViewController.swift in Sources */,
 				4CF2F4AC285A4B5D001C102F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

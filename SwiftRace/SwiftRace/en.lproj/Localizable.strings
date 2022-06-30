@@ -9,3 +9,6 @@
 "text_AlertController_title" = "CRASH";
 "text_AlertController_message" = "Try again";
 "text_AlertAction_title" = "Go back";
+
+"text_SideMenu_info" = "Information";
+"text_SideMenu_car" = "Choose a car";
